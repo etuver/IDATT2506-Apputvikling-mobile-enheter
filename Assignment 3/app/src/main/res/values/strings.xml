@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">assignment3</string>
+    <string name="app_name">Birthday reminder</string>
+    <string name="save_button">Save</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="save_add_button">Add</string>
+    <string name="add_new_button">Add friend</string>
+    <string name="enterName">Enter name</string>
+    <string name="enterBirthday">Enter Birthday</string>
 </resources>
