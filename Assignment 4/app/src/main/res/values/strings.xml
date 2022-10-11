@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Assignment 4</string>
+
+    <string-array name="movie_titles">
+        <item>Top Gun</item>
+        <item>Jaws</item>
+        <item>RoboCop</item>
+        <item>Super Mario</item>
+        <item>Rambo First Blood</item>
+        <item>Finding Nemo</item>
+    </string-array>
+
+    <string-array name="info_string_array">
+        <item>As students at the United States Navy\'s elite fighter weapons school compete to be best in the class, one daring young pilot learns a few things from a civilian instructor that are not taught in the classroom.</item>
+        <item>When a killer shark unleashes chaos on a beach community off Cape Cod, it\'s up to a local sheriff, a marine biologist, and an old seafarer to hunt the beast down.</item>
+        <item>In a dystopic and crime-ridden Detroit, a terminally wounded cop returns to the force as a powerful cyborg haunted by submerged memories.</item>
+        <item>A plumber named Mario travels through an underground labyrinth with his brother, Luigi, trying to save a captured princess. Feature film adaptation of the popular video game.</item>
+        <item>A veteran Green Beret is forced by a cruel Sheriff and his deputies to flee into the mountains and wage an escalating one-man war against his pursuers.</item>
+        <item>After his son is captured in the Great Barrier Reef and taken to Sydney, a timid clownfish sets out on a journey to bring him home.</item>
+    </string-array>
+
+    <array name="images">
+        <item>@drawable/topgun</item>
+        <item>@drawable/jaws</item>
+        <item>@drawable/robocop</item>
+        <item>@drawable/mario</item>
+        <item>@drawable/rambo</item>
+        <item>@drawable/nemo</item>
+    </array>
+</resources>
