@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="background_color_entries">
+        <item>Grønn</item>
+        <item>Blå</item>
+        <item>Rosa</item>
+        <item>Oransje</item>
+    </string-array>
+
+    <string-array name="background_color_values">
+        <item>#59ba73</item>
+        <item>#42c2db</item>
+        <item>#d651ed</item>
+        <item>#f5aa42</item>
+    </string-array>
+
+</resources>
