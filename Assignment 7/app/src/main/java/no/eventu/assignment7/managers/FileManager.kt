@@ -3,12 +3,8 @@ package no.eventu.assignment7.managers
 import android.app.Activity
 import android.util.Log
 import no.eventu.assignment7.Movie
-import java.io.BufferedReader
-import java.io.File
-import java.io.FileReader
-import java.io.IOException
-import java.io.InputStream
-import java.io.InputStreamReader
+import no.eventu.assignment7.service.Database
+import java.io.*
 
 class FileManager(private val activity: Activity) {
     private val filename: String = "newLocalFile.txt"
@@ -49,6 +45,47 @@ class FileManager(private val activity: Activity) {
         return moviesList
     }
 
+    private fun write(str: String) {
+        PrintWriter(file).use { writer ->
+            writer.println(str)
+        }
+    }
+
+    fun readLine(): String? {
+        BufferedReader(FileReader(file)).use { reader ->
+            return reader.readLine()
+        }
+    }
+
+    fun writeDbToTextFile(database: Database){
+        val string = StringBuffer("")
+        //println("print" + database.getDirectorFromMovie("12 Angry men"))
+        for (movie in database.allMovies){
+            string.append(movie + "\n")
+            println("movie: " + movie)
+            //val dir = database.getDirectorFromMovie(movie)
+            //val actors = database.getActorsFromMovie(title)
+            //println("dir: " +dir)
+            //println("director: "+ database.getDirectorFromMovie(movie).size)
+
+            //for (director in dir){
+            //    string.append(director + "\n")
+            //}
+            //string.append(dir + "\n")
+            for (director in database.getDirectorFromMovie(movie)){
+                string.append(director +"\n")
+                println("director: " + director)
+            }
+            for (actor in database.getActorsFromMovie(movie)){
+                string.append(actor)
+                if (actor != database.getActorsFromMovie(movie).last()){
+                    string.append(", ")
+                }
+            }
+            string.append("\n\n")
+        }
+        write(string.toString())
+    }
 
 
 }
